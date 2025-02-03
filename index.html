@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voronoi Diagram Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="max-w-3xl mx-auto p-4">
+        <h3 class="text-2xl font-semibold text-center mb-4">Netpbm color picker</h3>
+        <div class="mb-4">
+            <input type="file" id="fileInput" accept=".pbm,.pgm,.ppm,.pnm,.pam" class="block w-full text-sm text-gray-700 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+        </div>
+        <p class="text-sm text-gray-600 mb-4">
+            Clicked on x: "<span id="x-coordinate" class="font-semibold">-</span>" and y: "<span id="y-coordinate" class="font-semibold">-</span>" with color "<span id="colorText" class="font-semibold">-</span>" 
+        </p>
+        <div class="relative mb-4">
+            <canvas id="canvas" width="640" height="480" class="border-2 border-gray-300 rounded-md shadow-md"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
